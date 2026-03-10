@@ -1,0 +1,15 @@
+.App-Header{
+  background-color: rgb(222, 111, 130);
+  font-weight: bold;
+  color: whitesmoke;
+  display: flex;
+}
+.App-Header li{
+    
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+*{
+    margin: 0px;
+}
