@@ -1,14 +1,15 @@
 .App-Header{
-  background-color: rgb(82, 172, 186);
-  font-weight: bold;
+      background:#5c3a21;
   color: whitesmoke;
   display: flex;
+  justify-content: space-between;
 }
 .App-Header li{
     
-    display: inline-block;
+    display:inline-flex;
     font-size: 20px;
     padding: 10px;
+    
 }
 *{
     margin: 0px;
