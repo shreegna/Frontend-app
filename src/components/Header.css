@@ -3,6 +3,7 @@
   color: whitesmoke;
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 }
 .App-Header li{
     
@@ -13,4 +14,12 @@
 }
 *{
     margin: 0px;
+}
+.App-Header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.App-Header a:hover{
+    color: #ffd700;
 }
