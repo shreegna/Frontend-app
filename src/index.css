@@ -1,8 +1,14 @@
-*{
-  margin: 0px;
- 
+html, body, #root{
+
+margin:0;
 }
-body{
-    background: #f6f2ef;
-    font-family: "Segoe UI", sans-serif;
+
+.app-container{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+.main-content{
+flex:1;
 }
