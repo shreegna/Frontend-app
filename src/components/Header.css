@@ -1,25 +1,40 @@
-.App-Header{
-      background:#5c3a21;
-  color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
+
+     .App-Header{
+    background: #6b3e26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
+/* Logo */
+.App-Header h1{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+.App-Header ul{
+    list-style: none;
+}
+
 .App-Header li{
-    
-    display:inline-flex;
-    font-size: 20px;
-    padding: 10px;
-    
+    display: inline-block;
+    margin-left: 20px;
 }
-*{
-    margin: 0px;
-}
+
+/* Links */
 .App-Header a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s;
 }
+
+/* Hover effect */
 .App-Header a:hover{
     color: #ffd700;
+    transform: scale(1.05);
 }
