@@ -9,13 +9,13 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Logo */
+
 .App-Header h1{
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-/* Navigation */
+
 .App-Header ul{
     list-style: none;
 }
@@ -25,7 +25,6 @@
     margin-left: 20px;
 }
 
-/* Links */
 .App-Header a{
     color: white;
     text-decoration: none;
@@ -33,7 +32,7 @@
     transition: 0.3s;
 }
 
-/* Hover effect */
+
 .App-Header a:hover{
     color: #ffd700;
     transform: scale(1.05);
