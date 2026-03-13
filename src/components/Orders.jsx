@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../App";
 import axios from "axios";
+import "./Orders.css";
+
 function Orders() {
   const API_URL = import.meta.env.VITE_API_URL;
   const { user } = useContext(AppContext);
@@ -23,27 +25,34 @@ function Orders() {
   }, []);
 
   return (
-    <div>
-      <h1>My Orders</h1>
-      <div>
+    <div className="orders-container">
+      <div className="orders-box">
+        <h2>My Orders 📦</h2>
+
         {orders &&
           orders.map((order) => (
-            <div key={order._id}>
-              <h3>Order Id: {order.orderDate}</h3>
-              <ol>
+            <div key={order._id} className="order-card">
+              <h3>Order ID: {order.orderDate}</h3>
+
+              <ol className="order-items">
                 {order.items.map((item) => (
                   <li key={item._id}>
-                    {item.name}-{item.price}-{item.quantity}-
-                    {item.price * item.quantity}
+                    <span>{item.name}</span>
+                    <span>₹{item.price}</span>
+                    <span>Qty: {item.quantity}</span>
+                    <span>Total: ₹{item.price * item.quantity}</span>
                   </li>
                 ))}
               </ol>
-              <h3>Order Value: {order.orderValue}</h3>
-              <hr />
+
+              <h4 className="order-value">
+                Order Value: ₹{order.orderValue}
+              </h4>
             </div>
           ))}
       </div>
     </div>
   );
 }
+
 export default Orders;

@@ -1,0 +1,57 @@
+/* Center container */
+.orders-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Main card */
+.orders-box {
+  width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.orders-box h2 {
+  text-align: center;
+  color: #6b3e26;
+  margin-bottom: 20px;
+}
+
+/* Each order */
+.order-card {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+/* Order title */
+.order-card h3 {
+  color: #6b3e26;
+  margin-bottom: 10px;
+}
+
+/* Items list */
+.order-items {
+  list-style: none;
+  padding: 0;
+}
+
+.order-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* Order value */
+.order-value {
+  text-align: right;
+  margin-top: 10px;
+  color: #333;
+}

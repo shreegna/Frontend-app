@@ -1,0 +1,97 @@
+/* Center container */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Cart box */
+.cart-box {
+  width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.cart-box h2 {
+  text-align: center;
+  color: #6b3e26;
+  margin-bottom: 20px;
+}
+
+/* Cart list */
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Name */
+.item-name {
+  font-weight: 600;
+  width: 120px;
+}
+
+/* Price */
+.item-price {
+  color: #555;
+}
+
+/* Quantity buttons */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  padding: 4px 10px;
+  border: none;
+  background: #6b3e26;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background: #8b5a3c;
+}
+
+/* Item total */
+.item-total {
+  font-weight: bold;
+}
+
+/* Order value */
+.order-value {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Order button */
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #6b3e26;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #8b5a3c;
+}
